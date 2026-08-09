@@ -3,7 +3,6 @@ package deej
 import (
 	"fyne.io/systray"
 
-	"github.com/TheTipo01/deej/pkg/deej/icon"
 	"github.com/TheTipo01/deej/pkg/deej/util"
 )
 
@@ -13,15 +12,15 @@ func (d *Deej) initializeTray(onDone func()) {
 	onReady := func() {
 		logger.Debug("Tray instance ready")
 
-		systray.SetTemplateIcon(icon.DeejLogo, icon.DeejLogo)
+		systray.SetTemplateIcon(Logo, Logo)
 		systray.SetTitle("deej")
 		systray.SetTooltip("deej")
 
 		editConfig := systray.AddMenuItem("Edit configuration", "Open config file with notepad")
-		editConfig.SetIcon(icon.EditConfig)
+		editConfig.SetIcon(EditConfig)
 
 		refreshSessions := systray.AddMenuItem("Re-scan audio sessions", "Manually refresh audio sessions if something's stuck")
-		refreshSessions.SetIcon(icon.RefreshSessions)
+		refreshSessions.SetIcon(RefreshSessions)
 
 		if d.version != "" {
 			systray.AddSeparator()
