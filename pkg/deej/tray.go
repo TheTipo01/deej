@@ -1,7 +1,7 @@
 package deej
 
 import (
-	"fyne.io/systray"
+	"github.com/TheTipo01/systray"
 
 	"github.com/TheTipo01/deej/pkg/deej/util"
 )
