@@ -4,7 +4,7 @@ import _ "embed"
 
 // Logo is a binary representation of the deej logo; used for notifications and tray icon
 //
-//go:embed assets/logo-512.png
+//go:embed assets/logo.ico
 var Logo []byte
 
 // EditConfig is the cog icon in the edit config menu option
